@@ -144,11 +144,11 @@ This segmentation enables HR teams to prioritize interventions based on employee
 
 #  Key Insights
 
-- Employees sleeping fewer than 5 hours per night reported the highest average burnout.
-- Burnout increased as weekly working hours increased.
-- Strong manager support was consistently associated with lower burnout.
-- Technical job roles reported comparatively higher burnout.
-- Employees using therapy generally exhibited higher anxiety and depression scores, suggesting therapy utilization among employees already experiencing mental health challenges.
+- Employees sleeping fewer than 5 hours per night reported the highest average burnout (6.80 vs. 4.03 for those sleeping 7+ hours).
+- Burnout increased as weekly working hours and daily meeting load increased; stress score, work hours/week, and meetings/day are the strongest correlates of burnout in the dataset (r = 0.85, 0.47, and 0.46 respectively).
+- Strong manager support was consistently associated with lower burnout (Low Support 6.05 vs. High Support 4.85).
+- Job role and industry showed only marginal differences in burnout (within ~0.1 points), suggesting burnout here is driven more by workload and support factors than by role or sector.
+- Employees who use therapy reported *lower* average anxiety (GAD-7: 3.79 vs. 5.36) and depression (PHQ-9: 4.64 vs. 6.56) scores than those who don't. This is a correlation, not causation — it may reflect therapy's benefit, or that employees who already cope better are more likely to seek it.
 - Persona segmentation enables targeted HR intervention instead of applying the same strategy to every employee.
 
 ---
@@ -166,12 +166,19 @@ This segmentation enables HR teams to prioritize interventions based on employee
 # 📁Repository Structure
 
 ```
-employee-burnout-analysis/
+Burnout_Risk_Retention_Analysis_in_Tech/
 
-├── data/
-├── notebooks/
+├── mental_health_burnout_tech.csv
+├── python/
+│   └── Burnout_Analysis.ipynb
 ├── sql/
-├── dashboard/
+│   └── queries.sql
+├── Dashboard/
+│   └── Mental Health & Burnout.pbix
+├── output screens/
+│   ├── output 1.png
+│   ├── output 2.png
+│   └── output 3.png
 └── README.md
 ```
 
@@ -183,8 +190,11 @@ employee-burnout-analysis/
 - Build real-time HR dashboards.
 - Develop automated employee risk alerts.
 - Integrate predictive employee retention models.
-
 ---
 
 **Shivani Jella**
 
+
+---
+
+**Shivani Jella**
